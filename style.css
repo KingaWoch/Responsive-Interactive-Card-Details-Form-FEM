@@ -1,0 +1,123 @@
+:root {
+    --Linear-gradient: linear-gradient(hsl(249, 99%, 64%), hsl(278, 94%, 30%)); /*  active input border */
+    --Red: hsl(0, 100%, 66%); /* input errors */
+
+    --White: hsl(0, 0%, 100%);
+    --Light-grayish-violet: hsl(270, 3%, 87%);
+    --Dark-grayish-violet: hsl(279, 6%, 55%);
+    --Very-dark-violet: hsl(278, 68%, 11%);
+
+    --font-size: 1.125rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+}
+
+html, body {
+    height: 100%;
+}
+
+.page {
+    display: flex;
+    height: 100vh;
+}
+
+.cards-wrapper {
+    background-image: url(images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    width: 40%;
+    position: relative;
+}
+
+.cards {
+    position: absolute;
+    /* top: 50%;
+    left: 100%;
+    transform: translate(-50%m -50%); */
+}
+
+.inputs-wrapper {
+    background-color: var(--White);
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    gap: 1rem;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+label {
+    text-transform: uppercase;
+    color: var(--Very-dark-violet);
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+}
+
+input {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--Light-grayish-violet);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    color: var(--Very-dark-violet);
+}
+
+input:focus {
+    outline: 1px solid hsl(249, 99%, 64%);
+}
+
+input::placeholder {
+    color: var(--Light-grayish-violet);
+    font-size: 1rem;
+}
+
+.flex {
+    flex-direction: row;
+}
+
+.exp-date {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 0.5rem;
+}
+
+.exp-date input {
+    width: 50%;
+}
+
+.two-inputs {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.cvc-nr {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 0.5rem;
+}
+
+button {
+    background-color: var(--Very-dark-violet);
+    color: var(--White);
+    padding: 1rem 0;
+    font-size: var(--font-size);
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
