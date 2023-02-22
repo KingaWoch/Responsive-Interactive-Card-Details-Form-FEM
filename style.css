@@ -24,26 +24,83 @@ html, body {
 
 .page {
     display: flex;
-    height: 100vh;
+    gap: 15rem;
 }
+
+/* LEFT COLUMN STYLING */
 
 .cards-wrapper {
     background-image: url(images/bg-main-desktop.png);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     width: 40%;
     position: relative;
 }
 
 .cards {
     position: absolute;
-    /* top: 50%;
+    top: 50%;
     left: 100%;
-    transform: translate(-50%m -50%); */
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
 }
+
+.card-front {
+    transform: translate(-20%);
+    position: relative;
+}
+
+.card-logo {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+}
+
+.card-content {
+    position: absolute;
+    bottom: 1rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    color: var(--White);
+    width: 100%;
+}
+
+#card-number {
+    font-size: 1.9rem;
+    letter-spacing: 3px;
+}
+
+.card-flex {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.card-back {
+    position: relative;
+}
+
+#card-cvc-number {
+    position: absolute;
+    bottom: 47%;
+    right: 3.5rem;
+    color: var(--White);
+}
+
+
+/* RIGHT COLUMN STYLING */
+
 
 .inputs-wrapper {
     background-color: var(--White);
     width: 60%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,7 +110,7 @@ html, body {
     display: flex;
     flex-direction: column;
     width: 400px;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .input-field {
@@ -67,14 +124,16 @@ label {
     color: var(--Very-dark-violet);
     font-size: 0.8rem;
     letter-spacing: 3px;
+    font-weight: 700;
 }
 
 input {
-    padding: 0.5rem 1rem;
+    padding: 0.7rem 1rem;
     border: 1px solid var(--Light-grayish-violet);
     border-radius: 0.5rem;
     cursor: pointer;
     color: var(--Very-dark-violet);
+    font-size: 1rem;
 }
 
 input:focus {
@@ -84,6 +143,10 @@ input:focus {
 input::placeholder {
     color: var(--Light-grayish-violet);
     font-size: 1rem;
+}
+
+input.invalid {
+    border-color: var(--Red);
 }
 
 .flex {
@@ -116,8 +179,14 @@ input::placeholder {
 button {
     background-color: var(--Very-dark-violet);
     color: var(--White);
-    padding: 1rem 0;
+    padding: 0.5rem 0;
     font-size: var(--font-size);
     border-radius: 0.5rem;
     cursor: pointer;
+}
+
+.error {
+    color: var(--Red);
+    font-size: 0.8rem;
+    font-weight: 700;
 }

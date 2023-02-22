@@ -1,60 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
-  
-  <title>Frontend Mentor | Interactive card details form</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
 
-</head>
-<body>
-  <main>
-    <div class="page">
-      <div class="cards-wrapper">
-        <div class="cards">
-          <img src="images/bg-card-front.png" alt="">
-          <img src="images/bg-card-back.png" alt="">
-        </div>
-      </div>
-      <div class="inputs-wrapper">
-        <form action="" id="form">
-          <div class="input-field">
-            <label for="name">Cardholder Name</label>
-            <input type="text" id="name" placeholder="e.g. Jane Appleseed">
-          </div>
-          <div class="input-field">
-            <label for="card-number">Card Number</label>
-            <input type="text" id="card-number" placeholder="e.g. 1234 5678 9123 0000" minlength="16" maxlength="16">
-          </div>
-          <div class="input-field flex">
-            <div class="exp-date">
-              <label for="date">Exp. Date (MM/YY)</label>
-              <div class="two-inputs">
-                <input type="text" placeholder="MM" maxlength="2">
-                <input type="text" placeholder="YY" maxlength="2">
+    <title>Frontend Mentor | Interactive card details form</title>
+  </head>
+  <body>
+    <main>
+      <div class="page">
+
+        <!-- LEFT COLUMN -->
+
+        <div class="cards-wrapper">
+          <div class="cards">
+            <div class="card-front">
+              <img src="images/bg-card-front.png" alt="card front" />
+              <div class="card-container">
+                <img src="images/card-logo.svg" alt="logo" class="card-logo">
+                <div class="card-content">
+                  <span id="card-number">0000 0000 0000 0000</span>
+                  <div class="card-flex">
+                    <span id="card-name">Jane Appleseed</span>
+                    <div class="card-date">
+                      <span id="card-month">00</span>
+                      <span id="card-year">00</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="cvc-nr">
-              <label for="cvc">CVC</label>
-              <input type="text" id="cvc" placeholder="e.g. 123" maxlength="3">
+            <div class="card-back">
+              <img src="images/bg-card-back.png" alt="card back" />
+              <span id="card-cvc-number">000</span>
             </div>
           </div>
-          <button type="submit">Confirm</button>
-        </form>
+        </div>
+
+        <!-- RIGHT COLUMN -->
+
+        <div class="inputs-wrapper">
+          <form novalidate action="" id="form">
+            <div class="input-field">
+              <label for="name">Cardholder Name</label>
+              <input type="text" id="name" placeholder="e.g. Jane Appleseed"/>
+              <span class="error"></span>
+            </div>
+            <div class="input-field">
+              <label for="number">Card Number</label>
+              <input
+                type="text"
+                id="number"
+                placeholder="e.g. 1234 5678 9123 0000"
+                minlength="16"
+                maxlength="16"
+              />
+              <span class="error"></span>
+            </div>
+            
+            <div class="input-field flex">
+              <div class="exp-date">
+                <label for="date">Exp. Date (MM/YY)</label>
+                <div class="two-inputs">
+                  <input id="month" type="text" placeholder="MM" minlength="2" maxlength="2" />
+                  <input id="year" type="text" placeholder="YY" minlength="2" maxlength="2" />
+                </div>
+                <span class="error"></span>
+              </div>
+              <div class="cvc-nr">
+                <label for="cvc">CVC</label>
+                <input
+                  type="text"
+                  id="cvc-number"
+                  placeholder="e.g. 123"
+                  maxlength="3"
+                />
+                <span class="error"></span>
+              </div>
+              
+            </div>
+            <button type="submit">Confirm</button>
+          </form>
+        </div>
       </div>
-    </div>
-  </main>  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="https://github.com/KingaWoch" target="_blank">Kinga Woch</a>.
-    </p>
-  </footer>
-</body>
+    </main>
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/KingaWoch" target="_blank">Kinga Woch</a>.
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
