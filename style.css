@@ -1,220 +1,317 @@
 :root {
-    --Linear-gradient: linear-gradient(hsl(249, 99%, 64%), hsl(278, 94%, 30%)); /*  active input border */
-    --Red: hsl(0, 100%, 66%); /* input errors */
+  --Linear-gradient: linear-gradient(
+    hsl(249, 99%, 64%),
+    hsl(278, 94%, 30%)
+  ); /*  active input border */
+  --Red: hsl(0, 100%, 66%); /* input errors */
 
-    --White: hsl(0, 0%, 100%);
-    --Light-grayish-violet: hsl(270, 3%, 87%);
-    --Dark-grayish-violet: hsl(279, 6%, 55%);
-    --Very-dark-violet: hsl(278, 68%, 11%);
+  --White: hsl(0, 0%, 100%);
+  --Light-grayish-violet: hsl(270, 3%, 87%);
+  --Dark-grayish-violet: hsl(279, 6%, 55%);
+  --Very-dark-violet: hsl(278, 68%, 11%);
 
-    --font-size: 1.125rem;
+  --font-size: 1.125rem;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: 500;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
 }
 
-html, body {
-    height: 100%;
+html,
+body {
+  height: 100%;
 }
 
 .page {
-    display: flex;
-    gap: 15rem;
+  display: flex;
+  gap: 15rem;
 }
 
 /* LEFT COLUMN STYLING */
 
 .cards-wrapper {
-    background-image: url(images/bg-main-desktop.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 40%;
-    position: relative;
+  background-image: url(images/bg-main-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 40%;
+  position: relative;
 }
 
 .cards {
-    position: absolute;
-    top: 50%;
-    left: 100%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: column;
-    gap: 2.5rem;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
 }
 
 .card-front {
-    transform: translate(-20%);
-    position: relative;
+  transform: translate(-20%);
+  position: relative;
+  height: 245px;
+  border-radius: 0.8rem;
+  -webkit-box-shadow: 0px 14px 28px 7px rgba(0, 0, 0, 0.11);
+  -moz-box-shadow: 0px 14px 28px 7px rgba(0, 0, 0, 0.11);
+  box-shadow: 0px 14px 28px 7px rgba(0, 0, 0, 0.11);
 }
 
 .card-logo {
-    position: absolute;
-    top: 1.5rem;
-    left: 1.5rem;
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
 }
 
 .card-content {
-    position: absolute;
-    bottom: 1rem;
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    color: var(--White);
-    width: 100%;
+  position: absolute;
+  bottom: 1rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: var(--White);
+  width: 100%;
 }
 
 #card-number {
-    font-size: 1.9rem;
-    letter-spacing: 3px;
+  font-size: 1.9rem;
+  letter-spacing: 3px;
 }
 
 .card-flex {
-    display: flex;
-    justify-content: space-between;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .card-back {
-    position: relative;
+  position: relative;
+  height: 245px;
+  border-radius: 0.8rem;
+  -webkit-box-shadow: 0px 14px 28px 7px rgba(0, 0, 0, 0.11);
+  -moz-box-shadow: 0px 14px 28px 7px rgba(0, 0, 0, 0.11);
+  box-shadow: 0px 14px 28px 7px rgba(0, 0, 0, 0.11);
 }
 
 #card-cvc-number {
-    position: absolute;
-    bottom: 47%;
-    right: 3.5rem;
-    color: var(--White);
+  position: absolute;
+  bottom: 47%;
+  right: 3.5rem;
+  color: var(--White);
 }
-
 
 /* RIGHT COLUMN STYLING */
 
-
 .inputs-wrapper {
-    background-color: var(--White);
-    width: 60%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: var(--White);
+  width: 60%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #form {
-    display: flex;
-    flex-direction: column;
-    width: 400px;
-    gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  gap: 2rem;
 }
 
 .input-field {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 label {
-    text-transform: uppercase;
-    color: var(--Very-dark-violet);
-    font-size: 0.8rem;
-    letter-spacing: 3px;
-    font-weight: 700;
+  text-transform: uppercase;
+  color: var(--Very-dark-violet);
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+  font-weight: 700;
 }
 
 input {
-    padding: 0.7rem 1rem;
-    border: 1px solid var(--Light-grayish-violet);
-    border-radius: 0.5rem;
-    cursor: pointer;
-    color: var(--Very-dark-violet);
-    font-size: 1rem;
+  padding: 0.7rem 1rem;
+  border: 1px solid var(--Light-grayish-violet);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  color: var(--Very-dark-violet);
+  font-size: 1rem;
 }
 
 input:focus {
-    outline: 1px solid hsl(249, 99%, 64%);
+  outline: 1px solid hsl(249, 99%, 64%);
 }
 
 input::placeholder {
-    color: var(--Light-grayish-violet);
-    font-size: 1rem;
+  color: var(--Light-grayish-violet);
+  font-size: 1rem;
 }
 
 .invalid {
-    border-color: var(--Red);
+  border-color: var(--Red);
 }
 
 .flex {
-    flex-direction: row;
+  flex-direction: row;
 }
 
 .exp-date {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 0.5rem;
 }
 
 .exp-date input {
-    width: 50%;
+  width: 50%;
 }
 
 .two-inputs {
-    display: flex;
-    gap: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
 }
 
 .cvc-nr {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 0.5rem;
 }
 
 button {
-    background-color: var(--Very-dark-violet);
-    color: var(--White);
-    padding: 0.5rem 0;
-    font-size: var(--font-size);
-    border-radius: 0.5rem;
-    cursor: pointer;
+  background-color: var(--Very-dark-violet);
+  color: var(--White);
+  padding: 0.5rem 0;
+  font-size: var(--font-size);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  border: none;
 }
 
 .error {
-    color: var(--Red);
-    font-size: 0.8rem;
-    font-weight: 700;
+  color: var(--Red);
+  font-size: 0.8rem;
+  font-weight: 700;
 }
 
+.attribution {
+  font-size: 0.6rem;
+}
 
 /* THANK YOU CARD STYLING */
 
 #thank-you {
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 .thank-you img {
-    width: 55px;
+  width: 55px;
 }
 
 h1 {
-    color: var(--Very-dark-violet);
+  color: var(--Very-dark-violet);
 }
 
 p {
-    color: var(--Dark-grayish-violet);
+  color: var(--Dark-grayish-violet);
 }
 
 #continue {
-    margin-top: 1rem;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+  .page {
+    flex-direction: column;
+    gap: 0rem;
+  }
+
+  .cards-wrapper {
+    height: 40vh;
     width: 100%;
+    background-image: url(images/bg-main-mobile.png);
+  }
+
+  .cards {
+    flex-direction: column-reverse;
+    top: 63%;
+    left: 56%;
+  }
+
+  .card-front,
+  .card-front img,
+  .card-back,
+  .card-back img {
+    width: 260px;
+    height: 142.5px;
+  }
+
+  .card-back {
+    transform: translate(0%, 73%);
+    z-index: -1;
+  }
+
+  .card-container img {
+    width: 50px;
+    height: 30px;
+    top: 1rem;
+    left: 1rem;
+  }
+
+  .card-content {
+    bottom: 0.1rem;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  #card-number {
+    font-size: 0.96rem;
+  }
+
+  #card-name,
+  .card-date,
+  #card-cvc-number {
+    font-size: 0.7rem;
+  }
+
+  #card-cvc-number {
+    bottom: 48%;
+    right: 2.5rem;
+  }
+
+  .inputs-wrapper {
+    width: 100vw;
+    align-items: flex-start;
+    margin-top: 7rem;
+  }
+
+  #form {
+    width: 300px;
+    gap: 0.5rem;
+  }
+
+  label {
+    font-size: 0.6rem;
+  }
+
+  #thank-you {
+    width: 300px;
+  }
 }

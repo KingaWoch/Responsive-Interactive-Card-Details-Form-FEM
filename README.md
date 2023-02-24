@@ -1,6 +1,6 @@
 # Frontend Mentor - Interactive card details form solution
 
-This is a solution to the [Interactive card details form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Interactive card details form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -11,7 +11,6 @@ This is a solution to the [Interactive card details form challenge on Frontend M
 - [My process](#my-process)
   - [Built with](#built-with)
 - [Author](#author)
-
 
 ## Overview
 
@@ -28,12 +27,15 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
+![](./screenshot-desktop.png)
+![](./screenshot-desktop-thankyou.png)
+![](./screenshot-mobile.png)
+![](./screenshot-mobile-error.png)
+![](./screenshot-mobile-thankyou.png)
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Live Site at Netlify](https://interactive-form-kw.netlify.app)
 
 ## My process
 
@@ -43,7 +45,6 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - JavaScript
-
 
 ## Author
 
