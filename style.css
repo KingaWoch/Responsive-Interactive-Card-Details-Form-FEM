@@ -281,7 +281,7 @@ p {
     padding: 1rem;
   }
 
-  #card-number {
+  #card-number:focus {
     font-size: 0.96rem;
   }
 
